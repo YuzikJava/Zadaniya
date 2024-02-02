@@ -8,10 +8,7 @@ fun main(args: Array<String>) {
     val amount = scanner.nextInt()
     if ((card == "Mastercard") || (card == "Maestro")) {
         if ((300 < amount) && (amount < 75000)) {
-            
-
-
-
+            println("Комиссия за перевод составляет " + amount * 0.006 + " + 20 рублей" + "\nСумма перевода с учетом комиссии составляет " + (amount - amount * 0.006 - 20))
         }
     } else if ((card == "Visa") || (card == "Мир"))
     {
